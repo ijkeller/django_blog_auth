@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'api',
+    'rest_framework',
+	'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
@@ -75,10 +79,11 @@ WSGI_APPLICATION = 'django_blog_auth.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '<database name>',
     }
 }
+	
 
 
 # Password validation
