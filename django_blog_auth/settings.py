@@ -80,7 +80,9 @@ WSGI_APPLICATION = 'django_blog_auth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '<database name>',
+        'NAME': 'django_auth_blog',
+        'USER': 'postgres',
+        'PASSWORD': '97iiMDLD',
     }
 }
 	
@@ -126,3 +128,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'api.User' 
